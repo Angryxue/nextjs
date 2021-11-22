@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import "antd/dist/antd.less";
 
 const MyApp = ({ Component, pageProps }) => {
