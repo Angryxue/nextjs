@@ -1,0 +1,83 @@
+.magnifier {
+    position: relative;
+
+    .magnifier_img {
+        border: 1px solid #ccc !important;
+    }
+
+    .magnifier_hover {
+        position: absolute;
+        width: 214px;
+        height: 214px;
+        background: rgba(255, 167, 31, 0.3);
+        z-index: 1;
+        display: inline-block;
+    }
+
+    .magnifier_shade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 428px;
+        height: 428px;
+        z-index: 11;
+    }
+
+    .magnifier_box {
+        position: absolute;
+        left: 430px;
+        top: 0;
+        width: 428px;
+        height: 428px;
+        z-index: 10;
+        overflow: hidden;
+        border: 1px solid #ccc;
+
+        >div {
+            width: 856px;
+            height: 856px;
+            position: relative;
+
+            >.magnifier_box_img {
+                position: absolute;
+            }
+        }
+    }
+
+    .foot {
+        height: 70px;
+
+        .abtn,
+        .miniImg {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .miniImg {
+            margin: 0 10px;
+            width: 360px;
+            overflow-x: scroll;
+            white-space: nowrap;
+            height: 70px;
+
+            >div {
+                display: inline-block;
+                margin-right: 5px;
+                border: 1px solid #ccc;
+                width: 68px;
+                height: 68px;
+                cursor: pointer;
+            }
+
+            .active {
+                border: 2px solid #19A5A7;
+            }
+        }
+
+        .abtn {
+            width: 20px;
+            height: 68px;
+        }
+    }
+}

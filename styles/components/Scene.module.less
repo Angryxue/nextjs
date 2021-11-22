@@ -1,0 +1,235 @@
+.scene {
+  margin-top: 20px;
+
+  :global(.ant-tabs-nav) {
+    margin: 0 0 -3px 0;
+  }
+
+  .content {
+    display: flex;
+    border-top: 2px solid #19A5A7;
+
+    .lfet {
+      position: relative;
+      .sceneImage {
+          width: 860px;
+          height: 575px;
+      }
+    }
+    .right {
+      width: 725px;
+      margin-top: 41px;
+      margin-left: 8px;
+      display: flex;
+      flex-wrap: wrap;
+
+      >div {
+        width: 172px;
+        height: 212px;
+        background: #fff;
+        margin: 0 0 8px 8px;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+        }
+
+        >div {
+          width: 130px;
+          height: 140px;
+          margin: 0 auto;
+        }
+
+        .skuName {
+          color: #666;
+          display: block;
+          height: 42px;
+          font-size: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+
+          &:hover {
+            color: #19A5A7;
+          }
+        }
+
+        .skuPrice {
+          color: red;
+
+          i {
+            font-style: normal;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .dots {
+    position: relative;
+    cursor: pointer;
+    background-color: lawngreen;
+
+    span,
+    p {
+      vertical-align: middle;
+    }
+
+    span {
+      position: absolute;
+      display: block;
+      border-radius: 30px;
+      background-color: white;
+      z-index: 1;
+
+      &:nth-child(1) {
+        opacity: 0.4;
+        top: 2px;
+        left: 2px;
+        width: 10px;
+        height: 10px;
+        background: #f0f0f0;
+        animation: myAnimation 2s infinite;
+      }
+
+      &:nth-child(2) {
+        opacity: 0.7;
+        top: 3px;
+        left: 3px;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        animation: myAnimation 2s infinite;
+      }
+
+      &:nth-child(3) {
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        background: rgba(25, 165, 167, 1);
+      }
+    }
+
+    p{
+      position: absolute;
+      top:0;
+      left:0;
+      white-space: nowrap;
+      opacity: 0;
+    }
+
+    .dots_name_enter {
+      animation: dotsNameEnter .3s ease-in-out;
+      
+    }
+
+    .dots_name_leave {
+      animation: dotsNameLeave .3s ease-in-out;
+    }
+
+    .dots_name_enter,
+    .dots_name_leave {
+      font-size: 12px;
+      font-weight: bold;
+      color: #333333;
+      line-height: 18px;
+      padding: 7px 26px 5px 32px;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 20px;
+      margin: -8px 0 0 -4px;
+      z-index: 10;
+      animation-fill-mode: forwards;
+      box-shadow:0 2px 12px 0 rgb(0 0 0 / 10%);
+    }
+
+
+    &:hover {
+      span {
+        animation: none;
+        background: rgba(25, 165, 167, 1);
+      }
+    }
+
+  }
+
+  @keyframes dotsNameLeave {
+    0% {
+      transform: scale(1, 1);
+      transform-origin: 0 0;
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(.5, 1);
+      transform-origin: 0 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes dotsNameEnter {
+    0% {
+      transform: scale(0.5, 1);
+      transform-origin: 0 0;
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(1, 1);
+      transform-origin: 0 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes myAnimation {
+    0% {
+        transform: scale(2);
+    }
+
+    10% {
+      transform: scale(2.1);
+    }
+
+    20% {
+      transform: scale(2.2);
+    }
+
+    30% {
+      transform: scale(2.3);
+    }
+
+    40% {
+      transform: scale(2.4);
+    }
+
+    50% {
+      transform: scale(2.5);
+    }
+
+    60% {
+      transform: scale(2.4);
+    }
+
+    70% {
+      transform: scale(2.3);
+    }
+
+    80% {
+      transform: scale(2.2);
+    }
+
+    90% {
+      transform: scale(2.1);
+    }
+
+    100% {
+      transform: scale(2);
+    }
+  }
+}

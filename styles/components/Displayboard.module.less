@@ -1,0 +1,139 @@
+.displayboard {
+  margin-top: 20px;
+  color: #666;
+
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .name_right {
+      margin: 0;
+      >span {
+        padding: 0 8px;
+        font-weight: 400;
+        color: #999999;
+        font-size: 14px;
+        text-align: right;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: ' ';
+          top: 6px;
+          right: 0;
+          width: 1px;
+          height: 10px;
+          background: #999;
+        }
+        &:last-of-type{
+          &::after{
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  >div {
+    display: flex;
+
+    .middle {
+      width: 725px;
+      margin-left: 8px;
+      display: flex;
+      flex-wrap: wrap;
+
+      >div {
+        width: 172px;
+        height: 242px;
+        background: #fff;
+        margin: 0 8px 8px 0;
+        padding: 5px;
+        cursor: pointer;
+
+        &:nth-of-type(n+4) {
+          margin-bottom: 0;
+        }
+
+        >div {
+          width: 138px;
+          height: 140px;
+          margin: 0 auto;
+        }
+
+        .skuName {
+          margin-top: 15px;
+          display: block;
+          height: 42px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+
+          &:hover {
+            color: #19A5A7;
+          }
+        }
+
+        .skuPrice {
+          color: red;
+
+          i {
+            font-style: normal;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 272px;
+      padding: 0 10px;
+      background: #fff;
+
+      >div {
+        height: 100px;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        cursor: pointer;
+
+        .skuInfo {
+          width: 230px;
+
+          .skuName {
+            display: block;
+            height: 42px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+            &:hover {
+              color: #19A5A7;
+            }
+          }
+
+          .skuPrice {
+            color: red;
+
+            i {
+              font-style: normal;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      >div:last-child {
+        border: none;
+      }
+    }
+  }
+}

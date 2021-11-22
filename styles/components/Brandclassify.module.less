@@ -1,0 +1,42 @@
+.brandclassify {
+    >div {
+        position: relative;
+        display: flex;
+        border-top: 1px dashed #ccc;
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 3px
+        }
+        h4 {
+            display: block;
+            text-align: center;
+            width: 8%;
+            margin: 0;
+            padding-top: 5px;
+            background-color: #f3f3f3;
+        }
+        .narrow {
+            height: 30px;
+        }
+        >div {
+            width: 92%;
+            overflow: hidden;
+            padding-right: 50px;
+            padding-left: 20px;
+            span {
+                display: inline-block;
+                height: 30px;
+                line-height: 30px;
+                margin-right: 50px;
+                cursor: pointer;
+                &:hover {
+                    color: #19A5A7;
+                }
+            }
+            .active {
+                color: #19A5A7;
+            }
+        }
+    }
+}

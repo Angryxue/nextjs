@@ -1,0 +1,43 @@
+.floatheader {
+  position: fixed;
+  width: 100%;
+  top: -100px;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  border-bottom: 2px solid #19a5a7;
+  > div {
+    width: 1190px;
+    margin: 0 auto;
+    background-color: transparent;
+    .search {
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      .searchBox {
+        width: 567px;
+        margin-top: 3px;
+        margin-left: 50px;
+        :global(.ant-btn) {
+          width: 100px;
+          height: 43px;
+        }
+        :global(.ant-input-affix-wrapper) {
+          border: 2.5px solid #19a5a7;
+        }
+      }
+      .cartBox {
+          position: relative;
+          .bdg {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+          }
+      }
+      .cart {
+        margin-top:5px;
+        color: #19a5a7;
+      }
+    }
+  }
+}
