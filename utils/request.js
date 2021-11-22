@@ -1,5 +1,5 @@
 import axios from "axios";
-import baseURL from "@/servicePath.js";
+import baseURL from "../servicePath.js";
 // 创建axios实例
 const service = axios.create({
   timeout: 10000,
