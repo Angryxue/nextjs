@@ -2,7 +2,7 @@
 放大镜组件
 */
 import React, { useState } from "react";
-import { ImageLoader } from "@/utils/common";
+import { ImageLoader } from "../utils/common";
 
 // components
 import Image from "next/image";
@@ -10,7 +10,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 
 // style
-import styles from "@/styles/pages/Magnifier.module.less";
+import styles from "../styles/pages/Magnifier.module.less";
 
 const Magnifier = ({ pictureFile, name, skuId }) => {
   const [showImgIndex, setSowImgIndex] = useState(0);
