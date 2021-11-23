@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { request } from "@/utils/request";
-import { getURLQuery } from "@/utils/common";
+import { request } from "../utils/request";
+import { getURLQuery } from "../utils/common";
 
 // components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Magnifier from "@/components/Magnifier";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Magnifier from "../components/Magnifier";
 import { Layout, Spin, InputNumber, Button, Tabs, message } from "antd";
 const { TabPane } = Tabs;
 
 // style
-import styles from "@/styles/pages/Detail.module.less";
+import styles from "../styles/pages/Detail.module.less";
 
 const Detail = ({ data, submenu }) => {
   // 详情数据
