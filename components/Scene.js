@@ -2,8 +2,8 @@
 首页场景化采购组件
 */
 import React, { useState } from "react";
-import { request } from "@/utils/request";
-import { ImageLoader } from "@/utils/common";
+import { request } from "../utils/request";
+import { ImageLoader } from "../utils/common";
 
 // components
 import Image from "next/image";
@@ -11,7 +11,7 @@ import { Tabs } from "antd";
 const { TabPane } = Tabs;
 
 // style
-import styles from "@/styles/components/Scene.module.less";
+import styles from "../styles/components/Scene.module.less";
 
 // Image
 import scene1 from "@/public/image/scene/scene1.jpg";
