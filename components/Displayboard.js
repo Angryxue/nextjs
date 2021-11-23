@@ -2,14 +2,14 @@
 品类广场组件
 */
 import React, { useState } from "react";
-import { request } from "@/utils/request";
-import { ImageLoader } from "@/utils/common";
+import { request } from "../utils/request";
+import { ImageLoader } from "../utils/common";
 
 // components
 import Image from "next/image";
 
 // style
-import styles from "@/styles/components/Displayboard.module.less";
+import styles from "../styles/components/Displayboard.module.less";
 
 const Displayboard = ({ data }) => {
   // 切换不同品类产生的新数据
