@@ -9,7 +9,7 @@ import { Button } from "antd";
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
 
 // style
-import styles from "@/styles/components/Brandclassify.module.less";
+import styles from "../styles/components/Brandclassify.module.less";
 
 const Brandclassify = ({ classifies, brands, getBrands, getClassifies }) => {
   //展开
