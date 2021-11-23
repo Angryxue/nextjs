@@ -2,18 +2,18 @@
 活动组件
 */
 import React, { useState, useEffect } from "react";
-import { request } from "@/utils/request";
-import { ImageLoader, getURLQuery, removeNull } from "@/utils/common";
-import baseURL from "@/servicePath.js";
+import { request } from "../utils/request";
+import { ImageLoader, getURLQuery, removeNull } from "../utils/common";
+import baseURL from "../servicePath.js";
 
 // components
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { Layout, Carousel, Spin } from "antd";
 
 // style
-import styles from "@/styles/pages/Activity.module.less";
+import styles from "../styles/pages/Activity.module.less";
 
 const Activity = ({ menuData, submenu }) => {
   const initData = {
