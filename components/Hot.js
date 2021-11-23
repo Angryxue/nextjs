@@ -2,13 +2,13 @@
 热卖商品组件
 */
 import React from "react";
-import { ImageLoader } from "@/utils/common";
+import { ImageLoader } from "../utils/common";
 
 // components
 import Image from "next/image";
 
 // style
-import styles from "@/styles/components/Hot.module.less";
+import styles from "../styles/components/Hot.module.less";
 
 const Hot = ({ list }) => {
   return (
