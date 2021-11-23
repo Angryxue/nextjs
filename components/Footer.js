@@ -7,19 +7,19 @@ import React from "react";
 import Image from "next/image";
 
 // style
-import style from "@/styles/components/Footer.module.less";
+import style from "../styles/components/Footer.module.less";
 
 // image
-import slogan1 from "@/public/image/footer/slogan1.png";
-import slogan2 from "@/public/image/footer/slogan2.png";
-import slogan3 from "@/public/image/footer/slogan3.png";
-import slogan4 from "@/public/image/footer/slogan4.png";
-import warn1 from "@/public/image/footer/warn1.png";
-import warn2 from "@/public/image/footer/warn2.png";
-import warn3 from "@/public/image/footer/warn3.png";
-import warn4 from "@/public/image/footer/warn4.png";
-import warn5 from "@/public/image/footer/warn5.png";
-import qrCode from "@/public/image/footer/qrCode.png";
+import slogan1 from "../public/image/footer/slogan1.png";
+import slogan2 from "../public/image/footer/slogan2.png";
+import slogan3 from "../public/image/footer/slogan3.png";
+import slogan4 from "../public/image/footer/slogan4.png";
+import warn1 from "../public/image/footer/warn1.png";
+import warn2 from "../public/image/footer/warn2.png";
+import warn3 from "../public/image/footer/warn3.png";
+import warn4 from "../public/image/footer/warn4.png";
+import warn5 from "../public/image/footer/warn5.png";
+import qrCode from "../public/image/footer/qrCode.png";
 
 const Footer = () => {
   const list = {
