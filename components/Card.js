@@ -8,7 +8,7 @@ import { ImageLoader } from "@/utils/common";
 import Image from "next/image";
 
 // style
-import styles from "@/styles/components/Card.module.less";
+import styles from "../styles/components/Card.module.less";
 
 const Card = ({ data, size, style }) => {
   return (
