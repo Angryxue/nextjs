@@ -9,7 +9,7 @@ const { Link } = Anchor;
 import { BankFilled, UpSquareOutlined } from "@ant-design/icons";
 
 // style
-import styles from "@/styles/components/Sidetool.module.less";
+import styles from "../styles/components/Sidetool.module.less";
 
 const Sidetool = () => {
   const [customScrollTop, setCustomScrollTop] = useState(0);
