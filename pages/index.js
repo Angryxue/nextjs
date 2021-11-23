@@ -4,23 +4,23 @@
 
 import React, { useEffect } from "react";
 //Image Loader
-import { ImageLoader, getZhiCaiURL } from "@/utils/common";
-import { request } from "@/utils/request";
+import { ImageLoader, getZhiCaiURL } from "../utils/common";
+import { request } from "../utils/request";
 
 // components
 import Image from "next/image";
-import Header from "@/components/Header";
-import Floatheader from "@/components/Floatheader";
-import Sidetool from "@/components/Sidetool";
-import Footer from "@/components/Footer";
-import Scene from "@/components/Scene";
-import Displayboard from "@/components/Displayboard";
-import Hot from "@/components/Hot";
-import Recommendion from "@/components/Recommendion";
+import Header from "../components/Header";
+import Floatheader from "../components/Floatheader";
+import Sidetool from "../components/Sidetool";
+import Footer from "../components/Footer";
+import Scene from "../components/Scene";
+import Displayboard from "../components/Displayboard";
+import Hot from "../components/Hot";
+import Recommendion from "../components/Recommendion";
 import { Layout, Carousel } from "antd";
 
 // style
-import styles from "@/styles/pages/Home.module.less";
+import styles from "../styles/pages/Home.module.less";
 
 const Home = ({
   data,
