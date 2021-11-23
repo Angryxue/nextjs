@@ -4,19 +4,19 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { request } from "@/utils/request";
-import { removeNull } from "@/utils/common";
+import { request } from "../utils/request";
+import { removeNull } from "../utils/common";
 
 // components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Brandclassify from "@/components/Brandclassify";
-import Card from "@/components/Card";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Brandclassify from "../components/Brandclassify";
+import Card from "../components/Card";
 import { Pagination, Tag, Button, Input, Empty, Spin } from "antd";
 const { Search: SearchInput } = Input;
 
 // style
-import styles from "@/styles/pages/Search.module.less";
+import styles from "../styles/pages/Search.module.less";
 
 const Search = ({ menu, submenu }) => {
   // 搜索结果缺省值
