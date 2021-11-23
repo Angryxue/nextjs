@@ -3,7 +3,7 @@ Header组件
 */
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { getURLQuery } from "@/utils/common";
+import { getURLQuery } from "../utils/common";
 
 // components
 import Image from "next/image";
@@ -12,12 +12,12 @@ import { ShoppingCartOutlined, MenuFoldOutlined } from "@ant-design/icons";
 const { Search } = Input;
 
 // style
-import styles from "@/styles/components/Header.module.less";
+import styles from "../styles/components/Header.module.less";
 
 // Image
-import banner from "@/public/image/topBanner.jpg";
-import iconPhone from "@/public/icon/phone.png";
-import logo from "@/public/image/logo.png";
+import banner from "../public/image/topBanner.jpg";
+import iconPhone from "../public/icon/phone.png";
+import logo from "../public/image/logo.png";
 
 const Header = ({ firstLevelNavigations, submenu, subSite, visible }) => {
   const [submenuId, setSubmenuId] = useState(0);
