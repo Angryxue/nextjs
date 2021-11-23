@@ -14,14 +14,14 @@ const { TabPane } = Tabs;
 import styles from "../styles/components/Scene.module.less";
 
 // Image
-import scene1 from "@/public/image/scene/scene1.jpg";
-import scene2 from "@/public/image/scene/scene2.jpg";
-import scene3 from "@/public/image/scene/scene3.jpg";
-import scene4 from "@/public/image/scene/scene4.jpg";
-import scene5 from "@/public/image/scene/scene5.jpg";
-import scene6 from "@/public/image/scene/scene6.jpg";
-import scene7 from "@/public/image/scene/scene7.jpg";
-import scene8 from "@/public/image/scene/scene8.jpg";
+import scene1 from "../public/image/scene/scene1.jpg";
+import scene2 from "../public/image/scene/scene2.jpg";
+import scene3 from "../public/image/scene/scene3.jpg";
+import scene4 from "../public/image/scene/scene4.jpg";
+import scene5 from "../public/image/scene/scene5.jpg";
+import scene6 from "../public/image/scene/scene6.jpg";
+import scene7 from "../public/image/scene/scene7.jpg";
+import scene8 from "../public/image/scene/scene8.jpg";
 
 const Scene = ({ sku }) => {
   const [dots, setDots] = useState("");
