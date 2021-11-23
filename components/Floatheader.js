@@ -11,10 +11,10 @@ import { ShoppingCartOutlined } from "@ant-design/icons";
 const { Search } = Input;
 
 // style
-import styles from "@/styles/components/Floatheader.module.less";
+import styles from "../styles/components/Floatheader.module.less";
 
 // image
-import logo from "@/public/image/logo.png";
+import logo from "../public/image/logo.png";
 
 const Floatheader = () => {
   const router = useRouter();
