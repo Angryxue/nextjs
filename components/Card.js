@@ -2,7 +2,7 @@
 sku卡片
 */
 import React from "react";
-import { ImageLoader } from "@/utils/common";
+import { ImageLoader } from "../utils/common";
 
 // components
 import Image from "next/image";
