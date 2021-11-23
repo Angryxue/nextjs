@@ -1,4 +1,4 @@
-import baseURL from "@/servicePath.js";
+import baseURL from "../servicePath.js";
 
 /**
  * 获取跳转智采的地址
